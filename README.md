@@ -1,11 +1,16 @@
-# 🧩 ZenBug – Chrome Extension
+## 🧩 Load Extension in Chrome
 
-ZenBug Chrome Extension makes it simple for users to capture screenshots, record videos, annotate issues, and submit bug reports directly from the browser. Reports are sent to the ZenBug backend with optional metadata (browser, OS, viewport, current URL).
+1. Open **Chrome** → `chrome://extensions/`
+2. Enable **Developer Mode** (top-right).
+3. Click **Load unpacked**.
+4. Select the `/dist` folder.
+5. The ZenBug extension icon 🐞 will appear in your browser toolbar.
 
-## 🚀 Features
-- 📸 **Screenshot Capture** – Capture the active tab using Chrome APIs.  
-- 🎥 **Video Recording** – Record screen/tab using `chrome.tabCapture` & `MediaRecorder`.  
-- ✏️ **Annotation Tools** – Highlight, crop, and draw on captured images (powered by `Fabric.js`).  
-- 📝 **Feedback Form** – Collect title, description, severity, and optional email.  
-- 🌍 **Metadata Capture** – Automatically includes browser, OS, viewport size, and current URL.  
-- ☁️ **Backend Integration** – Uploads stored in Supabase Storage, report data in MongoDB.  
+---
+
+## 🖼️ Usage
+
+1. Click the ZenBug icon in Chrome.
+2. Choose **Screenshot** or **Record Video**.
+3. Annotate (if needed) and fill in the feedback form.
+4. Submit → data is sent to the ZenBug backend.

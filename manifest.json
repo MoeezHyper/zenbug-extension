@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ZenBug Feedback Widget",
+  "version": "1.1",
+  "description": "Feedback widget for reporting bugs using screenshots or video.",
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": { "default_title": "ZenBug Feedback" },
+  "web_accessible_resources": [
+    {
+      "resources": ["zenbug.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
